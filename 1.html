@@ -2,71 +2,74 @@
 <html>
   <head>
     <title>WEB1 - html</title>
-    <meta charset="utf-8">\
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115470307-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+    <meta charset="utf-8">
+    <style>
+      h1{
+        margin:0px;
+        border-bottom: 1px solid gray;
+        text-align: center;
+       }
+       h2{
 
-      gtag('config', 'UA-115470307-1');
-    </script>
+       }
+       body{
+         margin: 0px;
+         padding: 3px;
+       }
+       #grid ol{
+         border-right: 1px solid gray;
+         padding :33px;
+         margin-left: 0px;
+         margin-top:0px
+       }
+       #article{
+         padding:25px;
+       }
+       #grid{
+
+         display:grid;
+         grid-template-columns: 1fr 3fr;
+             }
+      @media(max-width:800px){
+        #grid{
+          display:block;
+          grid-template-columns: 1fr 3fr;
+              }
+              ol{
+                border-right: none;
+              }
+
+      }
+    </style>
+
   </head>
 
   <body>
-    <h1><a href="1.html">WEB</a></h1>
+    <h1><a href="index.html">WEB</a></h1>
+    <div id="grid">
     <ol>
       <li><a href="1.html">html</a></li>
       <li><a href="2.html">CSS</a></li>
       <li><a href="3.html">JavaScript</a></li>
     </ol>
-    <h2><a href="https://www.w3.org/TR/2010/WD-html5-20100624/" target="_blank" title="HTML설명">HTML이란 무엇인가?</a></h2>
-    <p>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/Xm4N9D77TUg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </p>
+    <!--
+    <h1><a href="1.html">WEB</a></h1>
+    <ol>
+      <li><a href="1.html"><font color="red">html</font></a></li>
+      <li><a href="2.html"><font color="red">CSS</font></a></li>
+      <li><a href="3.html"><font color="red">JavaScript</font></a></li>
+    </ol>
+    -->
+    <div id="article">
+    <h2><a href="https://ko.wikipedia.org/wiki/HTML" target="_blank" title="위키백과로 연결">HTML이란 무엇인가?</a></h2>
 
     <p><u>Hypertext Markup Language (HTML)</u> is the standard markup language for creating web pages and web applications. With Cascading Style Sheets (CSS) and JavaScript,it forms a triad of cornerstone technologies for the World Wide Web.
     Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document</p>
 
     <p style="margin-top:20px;">elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items.<br><img src="cording.jpg" width="450"><br> HTML elements are delineated by tags, written using angle brackets.</p>
+  </div>
+</div>
 
-    <div id="disqus_thread"></div>
-<script>
-
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://web1-vzik0yoan4.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-    <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/5aa4ee85d7591465c70874bf/default';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
-    </script>
-    <!--End of Tawk.to Script-->
-
-    </script>
 
   </body>
 </html>
